@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Item.destroy_all
+
+for i in (1..100)
+	Item.create({ name: "Item #{i}", description: "A simple description for #{i}" })
+end
